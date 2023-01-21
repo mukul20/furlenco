@@ -24,7 +24,7 @@
         <div class="fl-bg-red" style="border-radius:1.4rem;padding:2.5rem;">
             <div class="row">
                 <div class="col-7">
-                    <p class="fl-red bold ft-24 m-0">ORDER CANCELLED</p>
+                    <p class="fl-red bold ft-24 m-0">ORDER CONFIRMATION</p>
                 </div>
                 <div class="col-5 fl-red" style="text-align:right;">
                     <small class="float-end bold">
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
-            <p class="m-0">Your order has been successfully cancelled.</p>
+            <p class="m-0">Congratulations on choosing Furlenco. Your order is expected to be delivered and installed by <b>xx/xx/xx.</b></p>
         </div>
     </div>
     <div style="padding:2.5rem">
@@ -139,17 +139,28 @@
         </p>
         <hr/>
         <br/>
-        Your payment will be refunded back to the source account within 5-7 working days.
+        We require our first-time rental customers to complete their KYC registration with us.
+        <a href="#">Click here</a> to download the app & get started.
         <br/><br/>
-        <a class="bold" href="#">You can always check the Furlenco app to view your order details.</a>
+        Missing out on something or need something else?
+        Here’s a <a href="#">listing of our new products and collections.</a>
         <br/><br/>
-        Need something else? Here’s a <a class="bold" href="#">listing of our new products and collections.</a>
-        <br/><br/>
-        For any queries or issues, do take a look at our <a class="bold" href="#">FAQ section.</a>
+        Have more doubts? Take a look at our <a href="#">FAQ section</a> which covers (almost) everything on your mind. 
         <br/><br/>
         Lots of love and furniture,
         <br/><br/>
         Team Furlenco.
+
+    </div>
+    <div class="fl-bg text-center" style="padding:3rem 3.5rem;">
+        <img src="{{$assetPath}}/images/sofa.png" style="max-width:375px;" />
+        <p class="fl-yellow ft-40" style="margin:0.5rem 0 1rem 0;">Furlenco<br/>FREEDOM CIRCLE</p>
+        <p>
+            As a Furlenco customer, you’re also a part of the
+            <b>Furlenco Freedom Circle</b> which gives you the freedom to own your rented furniture with <b>Rent-to-Own</b> option,
+            along with a  host of benefits like swap & more.
+            Download the Furlenco app to know more.
+        </p>
     </div>
     @include('components.email.footer')
 </div>

@@ -20,7 +20,8 @@ class EmailController extends Controller
             'payment unsuccessful',
             'return confirmed',
             'unpaid invoice rental',
-            'order cancelled rental'
+            'order confirmation rental',
+            'order cancelled rental',
         ];
 
         return View::make('emails', ['emails' => $emails])->render();
