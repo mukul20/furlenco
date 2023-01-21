@@ -1,10 +1,5 @@
 @extends('layouts.email')
 @section('content')
-<style type="text/css">
-    .fl-yellow {
-        color: rgba(255, 221, 75);
-    }
-</style>
 <div id="container">
     @include('components.email.header')
     <div style="padding:3.5rem 4rem 2rem 4rem">
@@ -31,8 +26,8 @@
                 Choose how you want your furniture - rent short term, buy brand new or buy refurbished.
             </p>
         </div>
-        <div class="col-5" style="margin-left:-1.5rem;">
-            <img class="ignore-width" src="{{$assetPath}}/images/chair1.png" style="margin-top:5rem;width:calc(100% + 1.5rem);" />
+        <div class="col-5">
+            <img src="{{$assetPath}}/images/chair1.png" style="margin-top:4.5rem;" />
         </div>
     </div>
     <br/><br/>
@@ -49,8 +44,8 @@
         </div>
     </div>
     <center>
-        <span style="background:#fffced;border-radius:1rem;padding:0.5rem 1.2rem;margin:2rem 0;display:inline-block;">
-            Here's our <u><a class="bold" href="#">listing</a></u> on our latest products and collections.
+        <span style="background:#fffced;border-radius:1rem;padding:0.8rem 1.2rem;margin:2rem 0;display:inline-block;">
+            Here's our <a class="bold" href="#">listing</a> on our latest products and collections.
         </span>
     </center>
     <br/>
@@ -71,7 +66,7 @@
         @endfor
     </div>
     <div class="pad-standard">
-        <p>Something on your mind? Check out our <u><a class="bold" href="#">FAQ section</a></u> for queries and details.</p>
+        <p>Something on your mind? Check out our <a class="bold" href="#">FAQ section</a> for queries and details.</p>
         <p>We hope you have fun with Furlenco!</p>
     </div>
     @include('components.email.footer')

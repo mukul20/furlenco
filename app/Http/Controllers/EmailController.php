@@ -16,7 +16,10 @@ class EmailController extends Controller
     public function index()
     {
         $emails = [
-            'welcome'
+            'welcome',
+            'payment unsuccessful',
+            'return confirmed',
+            'unpaid invoice rental'
         ];
 
         return View::make('emails', ['emails' => $emails])->render();
@@ -32,7 +35,7 @@ class EmailController extends Controller
     {
         $assetPath = config('app.asset_url');
 
-        return View::make('emails.' . $email, ['assetPath' => $assetPath])->render();
+        return View::make('emails.' . $this->getEmailViewFile($email), ['assetPath' => $assetPath])->render();
     }
 
     /**
@@ -43,10 +46,12 @@ class EmailController extends Controller
      */
     public function sendEmail(Request $request)
     {
+        $emailTitle = $request->get('email');
         $assetPath = 'https://raw.githubusercontent.com/mukul20/furlenco/master/public';
-        Mail::send('emails.' . $request->get('email'), ['assetPath' => $assetPath], function($message) {
-            $message->to('mukulpesse@gmail.com', 'Furlenco')->subject('Subject');
-            $message->from('mukulpesse@gmail.com', 'Mukul');
+
+        Mail::send('emails.' . $this->getEmailViewFile($request->get('email')), ['assetPath' => $assetPath], function($message) use ($emailTitle) {
+            $message->to(['mukulpesse@gmail.com', 'mukul@yopmail.com'], 'Furlenco')->subject(ucwords($emailTitle));
+            $message->from('mukulpesse@gmail.com', 'Furlenco');
         });
     }
 
@@ -58,11 +63,17 @@ class EmailController extends Controller
      */
     public function generateEmailFile(Request $request)
     {
-        $content = View::make('emails.' . $request->get('email'))->render();
+        $assetPath = 'https://raw.githubusercontent.com/mukul20/furlenco/master/public';
+        $content = View::make('emails.' . $this->getEmailViewFile($request->get('email')), ['assetPath' => $assetPath])->render();
         $fileName = $request->get('email') . '.html';
         $fileStorePath = public_path('/generatedEmails/' . $fileName);
         File::put($fileStorePath, $content);
 
         return response()->download($fileStorePath);
+    }
+
+    private function getEmailViewFile($emailTitle)
+    {
+        return str_replace(' ', '', $emailTitle);
     }
 }

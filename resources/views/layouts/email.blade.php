@@ -29,14 +29,16 @@
                 margin: 0 auto;
                 font-size: 18px;
                 font-family: 'Work Sans', sans-serif;
-                color: rgba(34, 34, 34, 255);
+                color: rgb(34, 34, 34);
                 line-height: 1.2;
             }
             #container a {
-                text-decoration: none;
                 color: inherit;
             }
-            #container img:not(.ignore-width) {
+            #container a.fl-yellow {
+                color: rgb(255, 221, 75);
+            }
+            #container img {
                 max-width: 100%;
             }
             .pad-standard {
@@ -78,9 +80,19 @@
             .fl-color {
                 color: #059baa;
             }
+            .fl-red {
+                color: #ee5921;
+            }
+            .fl-yellow {
+                color: rgb(255, 221, 75);
+            }
             .fl-bg {
                 background: #059baa;
                 color: #fff;
+            }
+            .fl-bg-red {
+                background:#feefea;
+                color: rgb(34, 34, 34);
             }
             .clear {
                 clear: both;

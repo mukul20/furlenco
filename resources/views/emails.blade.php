@@ -8,6 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <style type="text/css">a{text-decoration:none;}</style>
     </head>
     <body>
         <div class="container-fluid p-5">
@@ -20,7 +21,7 @@
                 @foreach ($emails as $key => $email)
                 <tr>
                     <td>{{$key + 1}}</td>
-                    <td>{{ucWords($email)}} Email</td>
+                    <td>{{ucwords($email)}} Email</td>
                     <td>
                         <a href="{{config('app.url')}}/{{$email}}" target="_blank">
                             <button class="btn btn-primary">View</button>
