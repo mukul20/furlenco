@@ -30,7 +30,9 @@ class EmailController extends Controller
      */
     public function show($email)
     {
-        return View::make('emails.' . $email)->render();
+        $assetPath = config('app.asset_url');
+
+        return View::make('emails.' . $email, ['assetPath' => $assetPath])->render();
     }
 
     /**
@@ -41,7 +43,8 @@ class EmailController extends Controller
      */
     public function sendEmail(Request $request)
     {
-        Mail::send('emails.' . $request->get('email'), [], function($message) {
+        $assetPath = 'https://raw.githubusercontent.com/mukul20/furlenco/master/public';
+        Mail::send('emails.' . $request->get('email'), ['assetPath' => $assetPath], function($message) {
             $message->to('mukulpesse@gmail.com', 'Furlenco')->subject('Subject');
             $message->from('mukulpesse@gmail.com', 'Mukul');
         });

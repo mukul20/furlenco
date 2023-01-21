@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="x-apple-disable-message-reformatting" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
         <style type="text/css">
             * {
                 text-size-adjust: 100%;
@@ -16,22 +19,58 @@
                 height: 100%;
                 width: 100%;
             }
+            .fl-body {
+                background: #f0f0ef;
+            }
             #container {
-                width: 800px;
+                background: #fff;
+                width: 640px;
                 max-width: 100%;
                 margin: 0 auto;
-                border: 1px solid red;
-                font-size: 1.3rem
+                font-size: 18px;
+                font-family: 'Work Sans', sans-serif;
+                color: rgba(34, 34, 34, 255);
+                line-height: 1.2;
             }
             #container a {
                 text-decoration: none;
                 color: inherit;
             }
-            #container img {
+            #container img:not(.ignore-width) {
                 max-width: 100%;
             }
             .pad-standard {
-                padding: 4rem 4rem 3rem 4rem;
+                padding: 3.5rem 4rem 3rem 4rem;
+            }
+            .m-0 {
+                margin: 0;
+            }
+            .mb-0 {
+                margin-bottom: 0;
+            }
+            .mb-10 {
+                margin-bottom: 10px;
+            }
+            .mt-5 {
+                margin-top: 5px;
+            }
+            .in-bl {
+                display: inline-block;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .ft-24 {
+                font-size: 24px;
+            }
+            .ft-26 {
+                font-size: 26px;
+            }
+            .ft-40 {
+                font-size: 40px;
+            }
+            .ft-56 {
+                font-size: 56px;
             }
             .float-end {
                 float: right;
@@ -88,17 +127,17 @@
               width: 58.33333333%;
             }
 
-            .col-8 {
+            /*.col-8 {
               flex: 0 0 auto;
               width: 66.66666667%;
-            }
+            }*/
 
-/*            .col-9 {
+            .col-9 {
               flex: 0 0 auto;
               width: 75%;
             }
 
-            .col-10 {
+/*            .col-10 {
               flex: 0 0 auto;
               width: 83.33333333%;
             }
@@ -114,7 +153,7 @@
             }*/
         </style>
     </head>
-    <body>
+    <body class="fl-body">
         @yield('content')
     </body>
 </html>
