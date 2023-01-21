@@ -100,6 +100,9 @@
             .text-center {
                 text-align: center;
             }
+            hr {
+                border-top: 1px solid #bcbcbc;
+            }
             .row {
                 display: flex;
                 flex-wrap: wrap;

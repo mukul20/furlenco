@@ -3,7 +3,7 @@
 <div id="container">
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 2rem 2rem">
-        <div class="fl-bg-red" style="border-radius:1.5rem;padding:2.5rem;margin-bottom:3rem;">
+        <div class="fl-bg-red" style="border-radius:1.4rem;padding:2.5rem;margin-bottom:3rem;">
             <p class="fl-red bold ft-24 m-0">SUBSCRIPTION INVOICE</p>
             <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
             <p class="m-0">
