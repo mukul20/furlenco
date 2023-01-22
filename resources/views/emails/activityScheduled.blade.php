@@ -61,7 +61,7 @@
         <hr/>
         <br/>
         Some helpful dos and don'ts for a smooth experience:
-        <ul class="fl-points" style="padding-left:0;margin-bottom:2.5rem;">
+        <ul class="fl-points" style="padding-left:15px;margin-bottom:2.5rem;">
             <li style="color:#059baa;margin-bottom:10px;padding-left:5px;">
                 <span style="color:rgb(34, 34, 34);">
                     DO make sure you’re available. Want to reschedule your activity? <a class="bold" href="#">Click here</a> to head to the app and pick a date that suits you.

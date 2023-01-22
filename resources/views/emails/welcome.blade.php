@@ -26,14 +26,14 @@
                 Choose how you want your furniture - rent short term, buy brand new or buy refurbished.
             </p>
         </div>
-        <div class="col-5">
-            <img src="{{$assetPath}}/images/chair1.png" style="margin-top:5rem;" />
+        <div class="col-5" style="padding-top:5rem">
+            <img src="{{$assetPath}}/images/chair1.png" />
         </div>
     </div>
     <br/><br/>
     <div class="row">
-        <div class="col-5">
-            <img class="float-end" src="{{$assetPath}}/images/chair2.png" style="margin-top:7rem;" width="90%" />
+        <div class="col-5" style="padding-top:7rem;">
+            <img class="float-end" src="{{$assetPath}}/images/chair2.png" width="90%" />
         </div>
         <div class="col-7 text-center">
             <p class="ft-24 m-0">The Freedom to</p>
