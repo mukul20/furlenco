@@ -19,9 +19,6 @@
                 height: 100%;
                 width: 100%;
             }
-            .fl-body {
-                background: #f0f0ef;
-            }
             #container {
                 background: #fff;
                 width: 640px;
@@ -30,7 +27,7 @@
                 font-size: 18px;
                 font-family: 'Work Sans', sans-serif;
                 color: rgb(34, 34, 34);
-                line-height: 1.2;
+                line-height: 1.3;
             }
             #container a {
                 color: inherit;
@@ -168,7 +165,7 @@
             }*/
         </style>
     </head>
-    <body class="fl-body">
+    <body style="background:#f0f0ef;">
         @yield('content')
     </body>
 </html>

@@ -27,13 +27,13 @@
             </p>
         </div>
         <div class="col-5">
-            <img src="{{$assetPath}}/images/chair1.png" style="margin-top:4.5rem;" />
+            <img src="{{$assetPath}}/images/chair1.png" style="margin-top:5rem;" />
         </div>
     </div>
     <br/><br/>
     <div class="row">
-        <div class="col-5" style="margin-right:-2rem;margin-left:2rem;z-index:1;">
-            <img class="float-end" src="{{$assetPath}}/images/chair2.png" style="margin-top:7rem;" />
+        <div class="col-5">
+            <img class="float-end" src="{{$assetPath}}/images/chair2.png" style="margin-top:7rem;" width="90%" />
         </div>
         <div class="col-7 text-center">
             <p class="ft-24 m-0">The Freedom to</p>

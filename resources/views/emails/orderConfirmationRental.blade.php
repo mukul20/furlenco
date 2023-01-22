@@ -43,7 +43,7 @@
         <table style="width:100%;border-spacing:0 1.8rem;">
             <tr style="font-size:16px;">
                 <th colspan="2" style="text-align:left;padding:1rem 1rem 1rem 0;width:50%;">
-                    Product details
+                    Product Details
                 </th>
                 <th style="padding:1rem;">
                     Qty
@@ -150,7 +150,6 @@
         Lots of love and furniture,
         <br/><br/>
         Team Furlenco.
-
     </div>
     <div class="fl-bg text-center" style="padding:3rem 3.5rem;">
         <img src="{{$assetPath}}/images/sofa.png" style="max-width:375px;" />

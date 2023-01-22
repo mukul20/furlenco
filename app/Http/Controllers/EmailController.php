@@ -22,6 +22,7 @@ class EmailController extends Controller
             'unpaid invoice rental',
             'order confirmation rental',
             'order cancelled rental',
+            'activity scheduled',
         ];
 
         return View::make('emails', ['emails' => $emails])->render();
@@ -52,7 +53,7 @@ class EmailController extends Controller
         $assetPath = 'https://raw.githubusercontent.com/mukul20/furlenco/master/public';
 
         Mail::send('emails.' . $this->getEmailViewFile($request->get('email')), ['assetPath' => $assetPath], function($message) use ($emailTitle) {
-            $message->to(['mukulpesse@gmail.com'], 'Furlenco')->subject(ucwords($emailTitle));
+            $message->to(['mukulpesse@gmail.com', 'mukulpesse@outlook.com'], 'Furlenco')->subject(ucwords($emailTitle));
             $message->from('mukulpesse@gmail.com', 'Furlenco');
         });
     }
