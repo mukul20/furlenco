@@ -46,7 +46,7 @@
             </tr>
 
             @for ($i = 0; $i < 3; $i++)
-            <tr style="font-size:17px;">
+            <tr>
                 <td>
                     <div class="img-wrapper">
                         <img src="{{$assetPath}}/images/sofa-icon.png" />

@@ -9,12 +9,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
         <style type="text/css">
-            * {
-                text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-                -moz-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-            }
             html {
                 height: 100%;
                 width: 100%;
@@ -24,10 +18,10 @@
                 width: 640px;
                 max-width: 100%;
                 margin: 0 auto;
-                font-size: 18px;
+                font-size: 1.125em;
                 font-family: 'Work Sans', sans-serif;
                 color: rgb(34, 34, 34);
-                line-height: 1.3;
+                line-height: 1.4;
             }
             #container a {
                 color: inherit;
@@ -40,6 +34,15 @@
             }
             .pad-standard {
                 padding: 3.5rem 4rem 3rem 4rem;
+            }
+            .pad-1 {
+                padding: 0.5rem;
+            }
+            .pad-1-5 {
+                padding: 1.5rem;
+            }
+            .pad-r0 {
+                padding-right: 0;
             }
             .m-0 {
                 margin: 0;
@@ -60,16 +63,16 @@
                 font-weight: bold;
             }
             .ft-24 {
-                font-size: 24px;
+                font-size: 1.5em;
             }
             .ft-26 {
-                font-size: 26px;
+                font-size: 1.625em;
             }
             .ft-40 {
-                font-size: 40px;
+                font-size: 2.5em;
             }
             .ft-56 {
-                font-size: 56px;
+                font-size: 3.5em;
             }
             .float-end {
                 float: right;
@@ -104,65 +107,49 @@
                 display: flex;
                 flex-wrap: wrap;
             }
-/*            .col-1 {
-              flex: 0 0 auto;
-              width: 8.33333333%;
-            }
-
-            .col-2 {
-              flex: 0 0 auto;
-              width: 16.66666667%;
-            }
-
-            .col-3 {
-              flex: 0 0 auto;
-              width: 25%;
-            }
-
-            .col-4 {
-              flex: 0 0 auto;
-              width: 33.33333333%;
-            }*/
-
             .col-5 {
               flex: 0 0 auto;
               width: 41.66666667%;
             }
-
-/*            .col-6 {
-              flex: 0 0 auto;
-              width: 50%;
-            }*/
-
             .col-7 {
               flex: 0 0 auto;
               width: 58.33333333%;
             }
-
-            /*.col-8 {
-              flex: 0 0 auto;
-              width: 66.66666667%;
-            }*/
-
             .col-9 {
               flex: 0 0 auto;
               width: 75%;
             }
-
-/*            .col-10 {
-              flex: 0 0 auto;
-              width: 83.33333333%;
+            .footer {
+                padding: 2.8rem 4rem;
+                border-top: 1px solid #e9e9e9;
+                line-height:0;
             }
-
-            .col-11 {
-              flex: 0 0 auto;
-              width: 91.66666667%;
+            @media screen and (max-width: 480px) {
+                img.xs-shrink {
+                    zoom: 0.8;
+                    -moz-transform: scale(0.8);
+                    -webkit-transform: scale(0.8);
+                    transform: scale(0.8);
+                }
+                .pad-standard {
+                    padding: 2.5rem 2.5rem 2rem 2.5rem;
+                }
+                .footer {
+                    padding: 1.5rem 2.5rem;
+                }
+                .ft-40 {
+                    font-size: 2em;
+                }
+                .ft-56 {
+                    font-size: 3em;
+                }
+                th.pad-1 {
+                    padding: 0.5rem;
+                }
+                td.pad-1-5.xs-shrink {
+                    padding: 0.8rem;
+                }
             }
-
-            .col-12 {
-              flex: 0 0 auto;
-              width: 100%;
-            }*/
         </style>
     </head>
     <body style="background:#f0f0ef;">

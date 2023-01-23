@@ -1,4 +1,4 @@
-<div style="padding:2.8rem 4rem;border-top:1px solid #e9e9e9;line-height:0;">
+<div class="footer">
 	<a href="https://www.facebook.com/Furlenco" style="text-decoration:none;">
 		<img style="margin-right:1.4rem" src="{{$assetPath}}/images/fb-icon.png" width="32" height="32" />
 	</a>
@@ -22,3 +22,4 @@
 		</li>
 	</ul>
 </div>
+<div style="width:380px;height:1px;padding:0 2rem"></div>

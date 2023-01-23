@@ -15,6 +15,19 @@
             <span class="ft-24">to the world of furniture</span>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="text-center" style="margin:0 2rem 2rem 2rem;padding:2rem;background:#e6f5f8;border-radius:1.5rem;">
         <p class="m-0">You know what's best for you. At Furlenco, we give you the freedom to bring furniture to your home on your terms. With world-class designs & unparalleled quality, we give you the power to create a home that’s always trendy and always yours.</p>
     </div>
