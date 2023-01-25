@@ -1,35 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="x-apple-disable-message-reformatting" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style type="text/css">
-            html {
-                height: 100%;
-                width: 100%;
-            }
-            #container {
+            .fl-container {
                 background: #fff;
                 width: 640px;
                 max-width: 100%;
                 margin: 0 auto;
                 font-size: 1.125em;
-                font-family: 'Work Sans', sans-serif;
+                font-family: sans-serif;
                 color: rgb(34, 34, 34);
                 line-height: 1.4;
             }
-            #container a {
+            .fl-container a {
                 color: inherit;
             }
-            #container a.fl-yellow {
+            .fl-container a.fl-yellow {
                 color: rgb(255, 221, 75);
             }
-            #container img {
+            .fl-container img {
                 max-width: 100%;
             }
             .pad-standard {
@@ -125,12 +118,6 @@
                 line-height:0;
             }
             @media screen and (max-width: 480px) {
-                img.xs-shrink {
-                    zoom: 0.8;
-                    -moz-transform: scale(0.8);
-                    -webkit-transform: scale(0.8);
-                    transform: scale(0.8);
-                }
                 .pad-standard {
                     padding: 2.5rem 2.5rem 2rem 2.5rem;
                 }
@@ -152,7 +139,7 @@
             }
         </style>
     </head>
-    <body style="background:#f0f0ef;">
+    <div style="background:#f0f0ef;">
         @yield('content')
-    </body>
+    </div>
 </html>

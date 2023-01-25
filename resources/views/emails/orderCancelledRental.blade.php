@@ -18,7 +18,7 @@
         display: block;
     }
 </style>
-<div id="container">
+<div class="fl-container">
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 3rem 2rem">
         <div class="fl-bg-red" style="border-radius:1.4rem;padding:2.5rem;">
@@ -70,8 +70,8 @@
                     </div>
                 </td>
                 <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
-                <td class="pad-1-5 xs-shrink" style="text-align:center;">x1</td>
-                <td class="pad-1-5 xs-shrink text-center"></td>
+                <td class="pad-1-5" style="text-align:center;">x1</td>
+                <td class="pad-1-5 text-center"></td>
                 <td class="pad-1-5 text-center">-</td>
             </tr>
             @endfor
@@ -85,8 +85,8 @@
                     </div>
                 </td>
                 <td class="pad-1-5 pad-r0">LED TV</td>
-                <td class="pad-1-5 xs-shrink" style="text-align:center;">x1</td>
-                <td class="pad-1-5 xs-shrink text-center"></td>
+                <td class="pad-1-5" style="text-align:center;">x1</td>
+                <td class="pad-1-5 text-center"></td>
                 <td class="pad-1-5 text-center">-</td>
             </tr>
 

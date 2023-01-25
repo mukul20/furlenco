@@ -1,6 +1,6 @@
 @extends('layouts.email')
 @section('content')
-<div id="container">
+<div class="fl-container">
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 2rem 2rem">
         <div style="background:#fff;border-radius:1.4rem;padding:2.5rem;color:rgb(34, 34, 34);">

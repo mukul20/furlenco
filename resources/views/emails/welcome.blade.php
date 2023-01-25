@@ -1,6 +1,6 @@
 @extends('layouts.email')
 @section('content')
-<div id="container">
+<div class="fl-container">
     @include('components.email.header')
     <div style="padding:3.5rem 4rem 2rem 4rem">
         <span class="fl-color bold ft-24">WELCOME TO FURLENCO</span>

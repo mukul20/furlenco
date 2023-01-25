@@ -21,7 +21,7 @@
         font-size: 1.5rem;
     }
 </style>
-<div id="container">
+<div class="fl-container">
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 3rem 2rem">
         <div style="background:#fff;color:rgb(34, 34, 34);;border-radius:1.4rem;padding:2.5rem;">

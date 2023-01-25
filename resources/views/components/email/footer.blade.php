@@ -22,4 +22,4 @@
 		</li>
 	</ul>
 </div>
-<div style="width:380px;height:1px;padding:0 2rem"></div>
+<div style="width:0px;height:1px;padding:0 2rem"></div>
