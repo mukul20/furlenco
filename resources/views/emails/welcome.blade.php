@@ -2,7 +2,7 @@
 @section('content')
 <div class="fl-container">
     @include('components.email.header')
-    <div style="padding:3.5rem 4rem 2rem 4rem">
+    <div class="pad-standard">
         <span class="fl-color bold ft-24">WELCOME TO FURLENCO</span>
         <p class="ft-26 mb-10">Hey Sauban Ahmad,</p>
         It is time to live free.
@@ -15,19 +15,6 @@
             <span class="ft-24">to the world of furniture</span>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="text-center" style="margin:0 2rem 2rem 2rem;padding:2rem;background:#e6f5f8;border-radius:1.5rem;">
         <p class="m-0">You know what's best for you. At Furlenco, we give you the freedom to bring furniture to your home on your terms. With world-class designs & unparalleled quality, we give you the power to create a home that’s always trendy and always yours.</p>
     </div>
@@ -35,7 +22,7 @@
         <div class="col-7 text-center">
             <p class="ft-24 mb-0">The Freedom to</p>
             <span class="fl-color ft-56">CHOOSE</span>
-            <p class="mt-5" style="padding:2rem 4rem;background:#ffeffa;border-radius:0 1.5rem 1.5rem 0;">
+            <p class="mt-5 p-y2-x4" style="background:#ffeffa;border-radius:0 1.5rem 1.5rem 0;">
                 Choose how you want your furniture - rent short term, buy brand new or buy refurbished.
             </p>
         </div>
@@ -51,7 +38,7 @@
         <div class="col-7 text-center">
             <p class="ft-24 m-0">The Freedom to</p>
             <span class="fl-color ft-56">CHANGE</span>
-            <p class="mt-5" style="padding:2rem 4rem;background:#ffeffa;border-radius:1.5rem 0 0 1.5rem;">
+            <p class="mt-5 p-y2-x4" style="background:#ffeffa;border-radius:1.5rem 0 0 1.5rem;">
                 Change as your needs change. Own the furniture you once rented, or sell back your old products for credits you can use to buy something new.
             </p>
         </div>

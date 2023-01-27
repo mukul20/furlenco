@@ -3,7 +3,7 @@
 <div class="fl-container">
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 2rem 2rem">
-        <div class="fl-bg-red" style="border-radius:1.4rem;padding:2.5rem;">
+        <div class="fl-bg-red pad-2-5" style="border-radius:1.4rem;">
             <p class="fl-red bold ft-24 m-0">RETURN CONFIRMED</p>
             <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
             <p class="m-0">

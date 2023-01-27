@@ -1,17 +1,16 @@
-<!DOCTYPE>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=640, initial-scale=1.0" />
-        <meta name="x-apple-disable-message-reformatting" />
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style type="text/css">
             .fl-container {
                 background: #fff;
                 width: 640px;
                 max-width: 100%;
                 margin: 0 auto;
-                font-size: 1.125em;
+                font-size: 18px;
                 font-family: sans-serif;
                 color: rgb(34, 34, 34);
                 line-height: 1.4;
@@ -34,8 +33,14 @@
             .pad-1-5 {
                 padding: 1.5rem;
             }
+            .pad-2-5 {
+                padding: 2.5rem;
+            }
             .pad-r0 {
                 padding-right: 0;
+            }
+            .p-y2-x4 {
+                padding: 2rem 4rem;
             }
             .m-0 {
                 margin: 0;
@@ -55,17 +60,20 @@
             .bold {
                 font-weight: bold;
             }
+            .ft-16 {
+                font-size: 16px;
+            }
             .ft-24 {
-                font-size: 1.5em;
+                font-size: 24px;
             }
             .ft-26 {
-                font-size: 1.625em;
+                font-size: 26px;
             }
             .ft-40 {
-                font-size: 2.5em;
+                font-size: 40px;
             }
             .ft-56 {
-                font-size: 3.5em;
+                font-size: 56px;
             }
             .float-end {
                 float: right;
@@ -83,8 +91,12 @@
                 background: #059baa;
                 color: #fff;
             }
+            .fl-bg-white {
+                background: #fff;
+                color: rgb(34, 34, 34);
+            }
             .fl-bg-red {
-                background:#feefea;
+                background: #feefea;
                 color: rgb(34, 34, 34);
             }
             .clear {
@@ -101,249 +113,321 @@
                 flex-wrap: wrap;
             }
             .col-5 {
-              flex: 0 0 auto;
-              width: 41.66666667%;
+                flex: 0 0 auto;
+                width: 41.66666667%;
             }
             .col-7 {
-              flex: 0 0 auto;
-              width: 58.33333333%;
+                flex: 0 0 auto;
+                width: 58.33333333%;
             }
             .col-9 {
-              flex: 0 0 auto;
-              width: 75%;
+                flex: 0 0 auto;
+                width: 75%;
+            }
+            .logo {
+                width: 250px;
+            }
+            table .img-wrapper {
+                background: #fff;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                border-radius: 1rem;
+                -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+            }
+            table .img-wrapper img {
+                margin: auto;
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
             }
             .footer {
                 padding: 2.8rem 4rem;
                 border-top: 1px solid #e9e9e9;
-                line-height:0;
+                line-height: 0;
             }
-            @media  screen and (max-width: 480px) {
+            @media screen and (max-width: 480px) {
                 .pad-standard {
-                    padding: 2.5rem 2.5rem 2rem 2.5rem;
+                    padding: 3rem 3rem 2.5rem 3rem;
                 }
                 .footer {
-                    padding: 1.5rem 2.5rem;
+                    padding: 2rem 2.5rem;
+                }
+                .fl-container {
+                    font-size: 16px;
+                    border: 1px solid #059baa;
+                }
+                .ft-16 {
+                    font-size: 14px;
+                }
+                .ft-24 {
+                    font-size: 19px;
+                }
+                .ft-26 {
+                    font-size: 22px;
                 }
                 .ft-40 {
-                    font-size: 2em;
+                    font-size: 32px;
                 }
                 .ft-56 {
-                    font-size: 3em;
+                    font-size: 44px;
                 }
-                th.pad-1 {
+                .logo {
+                    width: 155px;
+                }
+                table .pad-1 {
                     padding: 0.5rem;
                 }
-                td.pad-1-5.xs-shrink {
-                    padding: 0.8rem;
+                table .pad-1-5 {
+                    padding: 0.9rem;
+                }
+                table .img-wrapper {
+                    width: 60px;
+                    height: 60px;
+                }
+                th.xs-nopad,
+                td.xs-nopad {
+                    padding: 0;
+                }
+            }
+            @media screen and (max-width: 390px) {
+                .pad-standard {
+                    padding: 2.5rem 2rem 2rem 2rem;
+                }
+                .fl-container {
+                    font-size: 14px;
+                }
+                .ft-24 {
+                    font-size: 16px;
+                }
+                .ft-26 {
+                    font-size: 19px;
+                }
+                .ft-40 {
+                    font-size: 28px;
+                }
+                .ft-56 {
+                    font-size: 38px;
+                }
+                .p-y2-x4 {
+                    padding: 1.5rem 2rem;
+                }
+                .logo {
+                    width: 140px;
+                }
+                .footer {
+                    padding: 1.5rem 2rem;
+                }
+                .pad-2-5 {
+                    padding: 2rem;
+                }
+                td.pad-r0 {
+                    padding-right: 0;
                 }
             }
         </style>
     </head>
-    <body style="background:#f0f0ef;">
-        <style type="text/css">
-    table .img-wrapper {
-        background: #fff;
-        width: 100px;
-        height: 100px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        border-radius: 1rem;
-        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
-        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
-    }
-    table .img-wrapper img {
-        margin: auto;
-        display: block;
-    }
-</style>
-<div class="fl-container">
-    <div class="fl-bg pad-standard">
-    <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/logo.png" width="250" />
-    <a class="float-end" href="https://www.furlenco.com/" style="text-decoration:none;">www.furlenco.com</a>
-</div>    <div class="fl-bg" style="padding:0 2rem 3rem 2rem">
-        <div class="fl-bg-red" style="border-radius:1.4rem;padding:2.5rem;">
-            <div class="row">
-                <div class="col-7">
-                    <p class="fl-red bold ft-24 m-0">ORDER CANCELLED</p>
-                </div>
-                <div class="col-5 fl-red" style="text-align:right;">
-                    <small class="float-end bold">
-                        Order no: 203
-                        <br/>
-                        Order date: XX/XX/XX
-                    </small>
+    <div style="background: #f0f0ef;">
+        <div class="fl-container">
+            <div class="fl-bg pad-standard">
+                <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/logo.png" class="logo" />
+                <a class="float-end" href="https://www.furlenco.com/" style="text-decoration: none;">www.furlenco.com</a>
+            </div>
+            <div class="fl-bg" style="padding: 0 2rem 3rem 2rem;">
+                <div class="fl-bg-red pad-2-5" style="border-radius: 1.4rem;">
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="fl-red bold ft-24 m-0">ORDER CANCELLED</p>
+                        </div>
+                        <div class="col-5 fl-red" style="text-align: right;">
+                            <b class="float-end ft-16">
+                                Order no: 203
+                                <br />
+                                Order date: XX/XX/XX
+                            </b>
+                        </div>
+                    </div>
+                    <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
+                    <p class="m-0">Your order has been successfully cancelled.</p>
                 </div>
             </div>
-            <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
-            <p class="m-0">Your order has been successfully cancelled.</p>
+            <div class="pad-2-5">
+                <p class="m-0 fl-red ft-24 bold">Your order details:</p>
+                <table style="width: 100%; border-spacing: 0 1.8rem;">
+                    <tr class="ft-16">
+                        <th class="pad-1" colspan="2" style="text-align: left; padding-left: 0; width: 50%;">
+                            Product Details
+                        </th>
+                        <th class="pad-1 xs-nopad">
+                            Qty
+                        </th>
+                        <th class="pad-1">
+                            Tenure
+                        </th>
+                        <th class="pad-1" style="padding-right: 0;">
+                            Monthly rental
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Crest 1BHK</td>
+                        <td class="xs-nopad" style="text-align: center; padding: 0 1.5rem;">x1</td>
+                        <td class="text-center">6 mo</td>
+                        <td class="pad-1 text-center" style="padding-right: 0;">₹X,XXX/-</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="img-wrapper">
+                                <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
+                            </div>
+                        </td>
+                        <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
+                        <td class="pad-1-5 xs-nopad text-center">x1</td>
+                        <td class="pad-1-5 text-center"></td>
+                        <td class="pad-1-5 text-center" style="padding-right: 0;">-</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img-wrapper">
+                                <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
+                            </div>
+                        </td>
+                        <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
+                        <td class="pad-1-5 xs-nopad text-center">x1</td>
+                        <td class="pad-1-5 text-center"></td>
+                        <td class="pad-1-5 text-center" style="padding-right: 0;">-</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img-wrapper">
+                                <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
+                            </div>
+                        </td>
+                        <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
+                        <td class="pad-1-5 xs-nopad text-center">x1</td>
+                        <td class="pad-1-5 text-center"></td>
+                        <td class="pad-1-5 text-center" style="padding-right: 0;">-</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img-wrapper">
+                                <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
+                            </div>
+                        </td>
+                        <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
+                        <td class="pad-1-5 xs-nopad text-center">x1</td>
+                        <td class="pad-1-5 text-center"></td>
+                        <td class="pad-1-5 text-center" style="padding-right: 0;">-</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" style="border-top: 1px solid #bcbcbc;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="img-wrapper">
+                                <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/chair-icon.png" />
+                            </div>
+                        </td>
+                        <td class="pad-1-5 pad-r0">LED TV</td>
+                        <td class="pad-1-5 xs-nopad text-center">x1</td>
+                        <td class="pad-1-5 text-center"></td>
+                        <td class="pad-1-5 text-center" style="padding-right: 0;">-</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" style="border-top: 1px solid #bcbcbc;"></td>
+                    </tr>
+
+                    <tr class="ft-16">
+                        <th colspan="2" style="text-align: left; padding: 1rem 1rem 1rem 0;">
+                            Value added services
+                        </th>
+                        <th style="padding: 1rem;">
+                            Qty
+                        </th>
+                        <th></th>
+                        <th class="text-center" style="padding-right: 0;">
+                            Amount
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Furlenco Care</td>
+                        <td style="text-align: center; padding-top: 0 1.5rem;">x1</td>
+                        <td></td>
+                        <td class="text-center">₹X,XXX/-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="border-top: 1px solid #bcbcbc;"></td>
+                    </tr>
+                    <td colspan="5" class="bold ft-24 fl-red">Your payment details:</td>
+                    <tr>
+                        <td colspan="4">Payment plan tenure</td>
+                        <td class="text-center">6 months</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Payment plan discount</td>
+                        <td class="text-center">25%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total cost of value added services</td>
+                        <td class="text-center">₹X,XXX/-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total amount due</td>
+                        <td class="text-center">₹X,XXX/-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Amount paid</td>
+                        <td class="text-center">₹X,XXX/-</td>
+                    </tr>
+                </table>
+                <hr />
+                <br />
+                Your payment will be refunded back to the source account within 5-7 working days.
+                <br />
+                <br />
+                <a class="bold" href="#">You can always check the Furlenco app to view your order details.</a>
+                <br />
+                <br />
+                Need something else? Here’s a <a class="bold" href="#">listing of our new products and collections.</a> <br />
+                <br />
+                For any queries or issues, do take a look at our <a class="bold" href="#">FAQ section.</a> <br />
+                <br />
+                Lots of love and furniture,
+                <br />
+                <br />
+                Team Furlenco.
+            </div>
+            <div class="footer">
+                <a href="https://www.facebook.com/Furlenco" style="text-decoration: none;">
+                    <img style="margin-right: 1.4rem;" src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/fb-icon.png" width="32" height="32" />
+                </a>
+                <a href="https://www.instagram.com/furlenco" style="text-decoration: none;">
+                    <img style="margin-right: 1.4rem;" src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/insta-icon.png" width="32" height="32" />
+                </a>
+                <a href="https://www.twitter.com/furlenco" style="text-decoration: none;">
+                    <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/twitter-icon.png" width="32" height="32" />
+                </a>
+                <ul class="float-end" style="list-style: none; margin-top: 0; padding-left: 0;">
+                    <li style="display: inline-block;">
+                        <a href="https://apps.apple.com/app/furlenco/id1134919232" style="text-decoration: none;">
+                            <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/apple-icon.png" width="24" />
+                        </a>
+                    </li>
+                    <li style="display: inline-block; border: 1px solid #222222; margin: 0 0.5rem; height: 25px;"></li>
+                    <li style="display: inline-block;">
+                        <a href="https://play.google.com/store/apps/details?id=com.furlenco.android" style="text-decoration: none;">
+                            <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/playstore-icon.png" width="24" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div style="padding:2.5rem">
-        <p class="m-0 fl-red ft-24 bold">Your order details:</p>
-        <table style="width:100%;border-spacing:0 1.8rem;">
-            <tr style="font-size:16px;">
-                <th class="pad-1" colspan="2" style="text-align:left;padding-left:0;width:50%;">
-                    Product Details
-                </th>
-                <th class="pad-1">
-                    Qty
-                </th>
-                <th class="pad-1">
-                    Tenure
-                </th>
-                <th class="pad-1" style="padding-right:0;width:115px;">
-                    Monthly rental
-                </th>
-            </tr>
-            <tr>
-                <td colspan="2">Crest 1BHK</td>
-                <td style="text-align:center;padding:0 1.5rem">x1</td>
-                <td style="text-align:center;">6 mo</td>
-                <td style="text-align:right;padding:0 1.5rem">₹X,XXX/-</td>
-            </tr>
-
-                        <tr>
-                <td>
-                    <div class="img-wrapper">
-                        <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
-                    </div>
-                </td>
-                <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
-                <td class="pad-1-5" style="text-align:center;">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center">-</td>
-            </tr>
-                        <tr>
-                <td>
-                    <div class="img-wrapper">
-                        <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
-                    </div>
-                </td>
-                <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
-                <td class="pad-1-5" style="text-align:center;">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center">-</td>
-            </tr>
-                        <tr>
-                <td>
-                    <div class="img-wrapper">
-                        <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
-                    </div>
-                </td>
-                <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
-                <td class="pad-1-5" style="text-align:center;">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center">-</td>
-            </tr>
-                        <tr>
-                <td>
-                    <div class="img-wrapper">
-                        <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/sofa-icon.png" />
-                    </div>
-                </td>
-                <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
-                <td class="pad-1-5" style="text-align:center;">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center">-</td>
-            </tr>
-            
-            <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
-
-            <tr>
-                <td>
-                    <div class="img-wrapper">
-                        <img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/chair-icon.png" />
-                    </div>
-                </td>
-                <td class="pad-1-5 pad-r0">LED TV</td>
-                <td class="pad-1-5" style="text-align:center;">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center">-</td>
-            </tr>
-
-            <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
-
-            <tr style="font-size:16px;">
-                <th colspan="2" style="text-align:left;padding:1rem 1rem 1rem 0;">
-                    Value added services
-                </th>
-                <th style="padding:1rem;">
-                    Qty
-                </th>
-                <th></th>
-                <th class="text-center">
-                    Amount
-                </th>
-            </tr>
-            <tr>
-                <td colspan="2">Furlenco Care</td>
-                <td style="text-align:center;padding-top:0 1.5rem">x1</td>
-                <td></td>
-                <td class="text-center">₹X,XXX/-</td>
-            </tr>
-            <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
-            <td colspan="5" class="bold ft-24 fl-red">Your payment details:</td>
-            <tr>
-                <td colspan="4">Payment plan tenure</td>
-                <td class="text-center">6 months</td>
-            </tr>
-            <tr>
-                <td colspan="4">Payment plan discount</td>
-                <td class="text-center">25%</td>
-            </tr>
-            <tr>
-                <td colspan="4">Total cost of value added services</td>
-                <td class="text-center">₹X,XXX/-</td>
-            </tr>
-            <tr>
-                <td colspan="4">Total amount due</td>
-                <td class="text-center">₹X,XXX/-</td>
-            </tr>
-            <tr>
-                <td colspan="4">Amount paid</td>
-                <td class="text-center">₹X,XXX/-</td>
-            </tr>
-        </table>
-        <hr/>
-        <br/>
-        Your payment will be refunded back to the source account within 5-7 working days.
-        <br/><br/>
-        <a class="bold" href="#">You can always check the Furlenco app to view your order details.</a>
-        <br/><br/>
-        Need something else? Here’s a <a class="bold" href="#">listing of our new products and collections.</a>
-        <br/><br/>
-        For any queries or issues, do take a look at our <a class="bold" href="#">FAQ section.</a>
-        <br/><br/>
-        Lots of love and furniture,
-        <br/><br/>
-        Team Furlenco.
-    </div>
-    <div class="footer">
-	<a href="https://www.facebook.com/Furlenco" style="text-decoration:none;">
-		<img style="margin-right:1.4rem" src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/fb-icon.png" width="32" height="32" />
-	</a>
-	<a href="https://www.instagram.com/furlenco" style="text-decoration:none;">
-		<img style="margin-right:1.4rem" src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/insta-icon.png" width="32" height="32" />
-	</a>
-	<a href="https://www.twitter.com/furlenco" style="text-decoration:none;">
-		<img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/twitter-icon.png" width="32" height="32" />
-	</a>
-	<ul class="float-end" style="list-style:none;margin-top:0;">
-		<li style="display:inline-block;">
-			<a href="https://apps.apple.com/app/furlenco/id1134919232" style="text-decoration:none;">
-				<img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/apple-icon.png" width="24" />
-			</a>
-		</li>
-		<li style="display:inline-block;border:1px solid #222222;margin:0 0.5rem;height:25px;"></li>
-		<li style="display:inline-block;">
-			<a href="https://play.google.com/store/apps/details?id=com.furlenco.android" style="text-decoration:none;">
-				<img src="https://raw.githubusercontent.com/mukul20/furlenco/master/public/images/playstore-icon.png" width="24" />
-			</a>
-		</li>
-	</ul>
-</div>
-<div style="width:420px;height:1px;padding:0 2rem"></div></div>
-    </body>
 </html>

@@ -1,46 +1,25 @@
 @extends('layouts.email')
 @section('content')
-<style type="text/css">
-    table .img-wrapper {
-        background: #fff;
-        width: 100px;
-        height: 100px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        border-radius: 1rem;
-        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
-        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
-    }
-    table .img-wrapper img {
-        margin: auto;
-        display: block;
-    }
-    .fl-points li::marker {
-        font-size: 1.5rem;
-    }
-</style>
 <div class="fl-container">
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 3rem 2rem">
-        <div style="background:#fff;color:rgb(34, 34, 34);;border-radius:1.4rem;padding:2.5rem;">
+        <div class="fl-bg-white pad-2-5" style="border-radius:1.4rem;">
             <p class="fl-color bold ft-24 m-0">ACTIVITY SCHEDULED</p>
             <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
             <p class="m-0">Your Furlenco activity has been scheduled for tomorrow, <b>xx/xx/xx.</b></p>
         </div>
     </div>
-    <div style="padding:2.5rem;">
+    <div class="pad-2-5">
         <p class="m-0 fl-color ft-24 bold">Activity details:</p>
         <table style="width:100%;border-spacing:0 1.8rem;">
-            <tr style="font-size:16px;">
-                <th colspan="2" style="text-align:left;padding:1rem 1rem 0 0;">
+            <tr class="ft-16">
+                <th class="pad-1" colspan="2" style="text-align:left;padding-left:0;width:50%;">
                     Product Details
                 </th>
-                <th style="padding:1rem 1rem 0 1rem;">
+                <th class="pad-1 xs-nopad">
                     Qty
                 </th>
-                <th style="padding:1rem 1rem 0 1rem;">
+                <th class="pad-1" style="padding-right:0;">
                     Activity
                 </th>
             </tr>
@@ -52,9 +31,9 @@
                         <img src="{{$assetPath}}/images/sofa-icon.png" />
                     </div>
                 </td>
-                <td style="padding:1.5rem;">Vive Lilac Three Seater Couch</td>
-                <td style="text-align:center;padding:0 1.5rem">x1</td>
-                <td style="text-align:center;padding:1.5rem">DELIVERY</td>
+                <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
+                <td class="pad-1-5 xs-nopad text-center">x1</td>
+                <td class="pad-1-5 text-center" style="padding-right:0;">DELIVERY</td>
             </tr>
             @endfor
         </table>

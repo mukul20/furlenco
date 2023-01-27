@@ -8,7 +8,7 @@
 	<a href="https://www.twitter.com/furlenco" style="text-decoration:none;">
 		<img src="{{$assetPath}}/images/twitter-icon.png" width="32" height="32" />
 	</a>
-	<ul class="float-end" style="list-style:none;margin-top:0;">
+	<ul class="float-end" style="list-style:none;margin-top:0;padding-left:0;">
 		<li style="display:inline-block;">
 			<a href="https://apps.apple.com/app/furlenco/id1134919232" style="text-decoration:none;">
 				<img src="{{$assetPath}}/images/apple-icon.png" width="24" />
@@ -22,4 +22,3 @@
 		</li>
 	</ul>
 </div>
-<div style="width:0px;height:1px;padding:0 2rem"></div>
