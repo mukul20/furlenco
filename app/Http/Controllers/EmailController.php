@@ -55,6 +55,10 @@ class EmailController extends Controller
         Mail::send('emails.' . $this->getEmailViewFile($request->get('email')), ['assetPath' => $assetPath], function($message) use ($emailTitle) {
             $message->to([
                 'mukulpesse@gmail.com',
+                'sheshank.sridharan@protonmail.com',
+                'rajasekhar.deverakonda@furlenco.com',
+                'mohit.dadhich@furlenco.com',
+                'ranjan.thangjam@furlenco.com',
             ], 'Furlenco')->subject('Test - ' . ucwords($emailTitle));
             $message->from('mukulpesse@gmail.com', 'Furlenco');
         });

@@ -22,3 +22,4 @@
 		</li>
 	</ul>
 </div>
+<hr style="width:640px;margin:0;border-width:1px 0 0 0;border-top: 1px solid #059baa;"/>

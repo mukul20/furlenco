@@ -9,12 +9,13 @@
             .fl-container {
                 background: #fff;
                 width: 640px;
-                max-width: 100%;
                 margin: 0 auto;
                 font-size: 18px;
                 font-family: sans-serif;
                 color: rgb(34, 34, 34);
                 line-height: 1.4;
+                border: solid #059baa;
+                border-width: 0 1px;
             }
             .fl-container a {
                 color: inherit;
@@ -150,84 +151,6 @@
                 padding: 2.8rem 4rem;
                 border-top: 1px solid #e9e9e9;
                 line-height:0;
-            }
-            @media screen and (max-width: 480px) {
-                .pad-standard {
-                    padding: 3rem 3rem 2.5rem 3rem;
-                }
-                .footer {
-                    padding: 2rem 2.5rem;
-                }
-                .fl-container {
-                    font-size: 16px;
-                    border: 1px solid #059baa;
-                }
-                .ft-16 {
-                    font-size: 14px;
-                }
-                .ft-24 {
-                    font-size: 19px;
-                }
-                .ft-26 {
-                    font-size: 22px;
-                }
-                .ft-40 {
-                    font-size: 32px;
-                }
-                .ft-56 {
-                    font-size: 44px;
-                }
-                .logo {
-                    width: 155px;
-                }
-                table .pad-1 {
-                    padding: 0.5rem;
-                }
-                table .pad-1-5 {
-                    padding: 0.9rem;
-                }
-                table .img-wrapper {
-                    width: 60px;
-                    height: 60px;
-                }
-                th.xs-nopad, td.xs-nopad {
-                    padding: 0;
-                }
-            }
-            @media screen and (max-width: 390px) {
-                .pad-standard {
-                    padding: 2.5rem 2rem 2rem 2rem;
-                }
-                .fl-container {
-                    font-size: 14px;
-                }
-                .ft-24 {
-                    font-size: 16px;
-                }
-                .ft-26 {
-                    font-size: 19px;
-                }
-                .ft-40 {
-                    font-size: 28px;
-                }
-                .ft-56 {
-                    font-size: 38px;
-                }
-                .p-y2-x4 {
-                    padding: 1.5rem 2rem;
-                }
-                .logo {
-                    width: 140px;
-                }
-                .footer {
-                    padding: 1.5rem 2rem;
-                }
-                .pad-2-5 {
-                    padding: 2rem;
-                }
-                td.pad-r0 {
-                    padding-right: 0;
-                }
             }
         </style>
     </head>
