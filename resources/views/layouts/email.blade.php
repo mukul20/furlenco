@@ -41,17 +41,26 @@
             .pad-r0 {
                 padding-right: 0;
             }
+            .pad-l0 {
+                padding-left: 0;
+            }
             .p-y2-x4 {
                 padding: 2rem 4rem;
             }
             .m-0 {
                 margin: 0;
             }
+            .mt-0 {
+                margin-top: 0;
+            }
             .mb-0 {
                 margin-bottom: 0;
             }
             .mb-10 {
                 margin-bottom: 10px;
+            }
+            .mb-15 {
+                margin-bottom: 15px;
             }
             .mt-5 {
                 margin-top: 5px;
@@ -86,6 +95,9 @@
             .fl-red {
                 color: #ee5921;
             }
+            .fl-blue {
+                color: rgb(66, 78, 154);
+            }
             .fl-yellow {
                 color: rgb(255, 221, 75);
             }
@@ -99,6 +111,10 @@
             }
             .fl-bg-red {
                 background: #feefea;
+                color: rgb(34, 34, 34);
+            }
+            .fl-bg-blue {
+                background: #ebeef5;
                 color: rgb(34, 34, 34);
             }
             .clear {

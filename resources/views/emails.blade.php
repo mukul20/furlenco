@@ -23,7 +23,7 @@
                     <td>{{$key + 1}}</td>
                     <td>{{ucwords($email)}} Email</td>
                     <td>
-                        <a href="{{config('app.url')}}/{{$email}}" target="_blank">
+                        <a href="{{config('app.url')}}/email/{{$email}}" target="_blank">
                             <button class="btn btn-primary">View</button>
                         </a>
                         <button class="btn btn-success" onclick="sendEmail('{{$email}}', this)">Send Email</button>

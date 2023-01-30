@@ -22,7 +22,24 @@ class EmailController extends Controller
             'unpaid invoice rental',
             'order confirmation rental',
             'order cancelled rental',
+            'order cancelled full',
             'activity scheduled',
+            'activity delayed',
+            'activity rescheduled',
+            'activity completed',
+            'return request confirm',
+            'invoice buying',
+            'order cancelled partial rental',
+            'order confirmation buying',
+            'order confirmation purchase',
+            'reminder CTD',
+            'subscription activated UNLMTD',
+            'subscription activated',
+            'repair request confirmed',
+            'repair request received',
+            'email verification',
+            'renewal successful',
+            'order confirmation UNLMTD',
         ];
 
         return View::make('emails', ['emails' => $emails])->render();
@@ -55,10 +72,10 @@ class EmailController extends Controller
         Mail::send('emails.' . $this->getEmailViewFile($request->get('email')), ['assetPath' => $assetPath], function($message) use ($emailTitle) {
             $message->to([
                 'mukulpesse@gmail.com',
-                'sheshank.sridharan@protonmail.com',
-                'rajasekhar.deverakonda@furlenco.com',
-                'mohit.dadhich@furlenco.com',
-                'ranjan.thangjam@furlenco.com',
+                //'sheshank.sridharan@protonmail.com',
+                //'rajasekhar.deverakonda@furlenco.com',
+                //'mohit.dadhich@furlenco.com',
+                //'ranjan.thangjam@furlenco.com',
             ], 'Furlenco')->subject('Test - ' . ucwords($emailTitle));
             $message->from('mukulpesse@gmail.com', 'Furlenco');
         });
@@ -84,5 +101,17 @@ class EmailController extends Controller
     private function getEmailViewFile($emailTitle)
     {
         return str_replace(' ', '', $emailTitle);
+    }
+
+    public function removeClassForm(Request $request)
+    {
+        $formattedCode = '';
+
+        if ($request->has('code')) {
+            $code = $request->get('code');
+            $formattedCode = preg_replace('/\sclass=[\'|"][^\'"]+[\'|"]/', '', $code);
+        }
+
+        return View::make('removeClass', ['formattedCode' => $formattedCode])->render();
     }
 }

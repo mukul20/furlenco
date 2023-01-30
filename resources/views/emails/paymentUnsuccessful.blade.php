@@ -4,7 +4,7 @@
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 2rem 2rem">
         <div class="fl-bg-white pad-2-5" style="border-radius:1.4rem;">
-            <div class="row">
+            <div class="row" style="width:100%;">
                 <div class="col-7">
                     <p class="fl-color bold ft-24 m-0">PAYMENT UNSUCCESSFUL</p>
                 </div>

@@ -17,11 +17,11 @@
                 </div>
             </div>
             <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
-            <p class="m-0">Congratulations on choosing Furlenco. Your order is expected to be delivered and installed by <b>xx/xx/xx.</b></p>
+            <p class="m-0">Congratulations on choosing UNLMTD by Furlenco.<br/>Your order is expected to be delivered and installed by <b>xx/xx/xx.</b></p>
         </div>
     </div>
     <div class="pad-2-5">
-        <p class="m-0 fl-red ft-24 bold">Your order details:</p>
+        <p class="m-0 fl-red ft-24 bold">Your plan details:</p>
         <table style="width:100%;border-spacing:0 1.8rem;">
             <tr class="ft-16">
                 <th class="pad-1" colspan="2" style="text-align:left;padding-left:0;width:50%;">
@@ -44,7 +44,7 @@
                 <td class="pad-1 text-center" style="padding-right:0;">₹X,XXX/-</td>
             </tr>
 
-            @for ($i = 0; $i < 4; $i++)
+            @for ($i = 0; $i < 6; $i++)
             <tr>
                 <td>
                     <div class="img-wrapper">
@@ -52,25 +52,11 @@
                     </div>
                 </td>
                 <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
-                <td class="pad-1-5 xs-nopad text-center">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center" style="padding-right:0;">-</td>
+                <td class="pad-1-5 xs-nopad text-center">x{{$i + 1}}</td>
+                <td class="pad-1 text-center"></td>
+                <td class="pad-1 text-center" style="padding-right:0;">-</td>
             </tr>
             @endfor
-
-            <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
-
-            <tr>
-                <td>
-                    <div class="img-wrapper">
-                        <img src="{{$assetPath}}/images/chair-icon.png" />
-                    </div>
-                </td>
-                <td class="pad-1-5 pad-r0">LED TV</td>
-                <td class="pad-1-5 xs-nopad text-center">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center" style="padding-right:0;">-</td>
-            </tr>
 
             <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
 
@@ -88,12 +74,16 @@
             </tr>
             <tr>
                 <td colspan="2">Furlenco Care</td>
-                <td style="text-align:center;padding-top:0 1.5rem">x1</td>
+                <td style="text-align:center;padding-top:0 1rem">x1</td>
                 <td></td>
                 <td class="text-center" style="padding-right:0;">₹X,XXX/-</td>
             </tr>
             <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
             <td colspan="5" class="bold ft-24 fl-red">Your payment details:</td>
+            <tr>
+                <td colspan="4">Total monthly rental</td>
+                <td class="text-center" style="padding-right:0;">₹X,XXX/-</td>
+            </tr>
             <tr>
                 <td colspan="4">Payment plan tenure</td>
                 <td class="text-center" style="padding-right:0;">6 months</td>
@@ -120,7 +110,7 @@
         We require our first-time rental customers to complete their KYC registration with us.
         <a href="#">Click here</a> to download the app & get started.
         <br/><br/>
-        Missing out on something or need something else?
+        Missing out on something or need something else?<br/>
         Here’s a <a href="#">listing of our new products and collections.</a>
         <br/><br/>
         Have more doubts? Take a look at our <a href="#">FAQ section</a> which covers (almost) everything on your mind. 
@@ -134,7 +124,7 @@
         <p class="fl-yellow ft-40" style="margin:0.5rem 0 1rem 0;">Furlenco<br/>FREEDOM CIRCLE</p>
         <p>
             As a Furlenco customer, you’re also a part of the
-            <b>Furlenco Freedom Circle</b> which gives you the freedom to own your rented furniture with <b>Rent-to-Own</b> option,
+            <b><i>Furlenco Freedom Circle</i></b> which gives you the freedom to own your rented furniture with <b>Rent-to-Own</b> option,
             along with a  host of benefits like swap & more.
             Download the Furlenco app to know more.
         </p>

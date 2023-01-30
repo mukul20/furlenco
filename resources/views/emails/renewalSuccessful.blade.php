@@ -4,20 +4,9 @@
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 3rem 2rem">
         <div class="fl-bg-red pad-2-5" style="border-radius:1.4rem;">
-            <div class="row" style="width:100%;">
-                <div class="col-7">
-                    <p class="fl-red bold ft-24 m-0">ORDER CONFIRMATION</p>
-                </div>
-                <div class="col-5 fl-red" style="text-align:right;">
-                    <b class="float-end ft-16">
-                        Order no: 203
-                        <br/>
-                        Order date: XX/XX/XX
-                    </b>
-                </div>
-            </div>
+            <p class="fl-red bold ft-24 m-0">RENEWAL SUCCESSFUL</p>
             <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
-            <p class="m-0">Congratulations on choosing Furlenco. Your order is expected to be delivered and installed by <b>xx/xx/xx.</b></p>
+            <p class="m-0">Congratulations!<br/>You have successfully renewed your subscription.</p>
         </div>
     </div>
     <div class="pad-2-5">
@@ -52,8 +41,8 @@
                     </div>
                 </td>
                 <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
-                <td class="pad-1-5 xs-nopad text-center">x1</td>
-                <td class="pad-1-5 text-center"></td>
+                <td class="pad-1 xs-nopad text-center">x1</td>
+                <td class="pad-1 text-center"></td>
                 <td class="pad-1-5 text-center" style="padding-right:0;">-</td>
             </tr>
             @endfor
@@ -67,9 +56,9 @@
                     </div>
                 </td>
                 <td class="pad-1-5 pad-r0">LED TV</td>
-                <td class="pad-1-5 xs-nopad text-center">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center" style="padding-right:0;">-</td>
+                <td class="pad-1 xs-nopad text-center">x1</td>
+                <td class="pad-1 text-center">9 mo</td>
+                <td class="pad-1-5 text-center" style="padding-right:0;">₹X,XXX/-</td>
             </tr>
 
             <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
@@ -95,6 +84,10 @@
             <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
             <td colspan="5" class="bold ft-24 fl-red">Your payment details:</td>
             <tr>
+                <td colspan="4">Total monthly rental</td>
+                <td class="text-center" style="padding-right:0;">₹X,XXX/-</td>
+            </tr>
+            <tr>
                 <td colspan="4">Payment plan tenure</td>
                 <td class="text-center" style="padding-right:0;">6 months</td>
             </tr>
@@ -117,26 +110,23 @@
         </table>
         <hr/>
         <br/>
-        We require our first-time rental customers to complete their KYC registration with us.
-        <a href="#">Click here</a> to download the app & get started.
+        Your plan is pre-paid and will be up for renewal on <b/>xx/xx/xx.</b><br/>So, until then, just sit back and chill!
         <br/><br/>
-        Missing out on something or need something else?
-        Here’s a <a href="#">listing of our new products and collections.</a>
+        Missing out on something or need something else?<br/>
+        Here’s a <a href="#" class="bold">listing of our new products and collections.</a>
         <br/><br/>
-        Have more doubts? Take a look at our <a href="#">FAQ section</a> which covers (almost) everything on your mind. 
+        For any queries or issues, do take a look at our <a href="#" class="bold">FAQ section</a>, or <a href="#" class="bold">click here</a> to manage your subscription.
         <br/><br/>
         Lots of love and furniture,
         <br/><br/>
         Team Furlenco.
     </div>
-    <div class="fl-bg text-center" style="padding:3rem 3.5rem;">
-        <img src="{{$assetPath}}/images/sofa.png" />
-        <p class="fl-yellow ft-40" style="margin:0.5rem 0 1rem 0;">Furlenco<br/>FREEDOM CIRCLE</p>
-        <p>
-            As a Furlenco customer, you’re also a part of the
-            <b>Furlenco Freedom Circle</b> which gives you the freedom to own your rented furniture with <b>Rent-to-Own</b> option,
-            along with a  host of benefits like swap & more.
-            Download the Furlenco app to know more.
+    <div class="fl-bg pad-1-5">
+        <center><img src="{{$assetPath}}/images/chair3.png" width="75%" style="margin-top:3rem;" /></center>
+        <p style="padding: 1rem;">
+            By the way, love your rented furniture? Own it at amazing discounts just for you with <b class="fl-yellow">Rent-To-Own!</b>
+            <br/><br/>
+            Now your favourites never have to leave your home. <a class="fl-yellow bold" href="#">Click here</a> to know more.
         </p>
     </div>
     @include('components.email.footer')

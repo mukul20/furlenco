@@ -4,7 +4,7 @@
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 3rem 2rem">
         <div class="fl-bg-red pad-2-5" style="border-radius:1.4rem;">
-            <div class="row">
+            <div class="row" style="width:100%;">
                 <div class="col-7">
                     <p class="fl-red bold ft-24 m-0">ORDER CANCELLED</p>
                 </div>

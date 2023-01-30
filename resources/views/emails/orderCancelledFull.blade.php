@@ -3,12 +3,12 @@
 <div class="fl-container">
     @include('components.email.header')
     <div class="fl-bg" style="padding:0 2rem 3rem 2rem">
-        <div class="fl-bg-red pad-2-5" style="border-radius:1.4rem;">
+        <div class="fl-bg-blue pad-2-5" style="border-radius:1.4rem;">
             <div class="row" style="width:100%;">
                 <div class="col-7">
-                    <p class="fl-red bold ft-24 m-0">ORDER CONFIRMATION</p>
+                    <p class="fl-blue bold ft-24 m-0">ORDER CANCELLED</p>
                 </div>
-                <div class="col-5 fl-red" style="text-align:right;">
+                <div class="col-5 fl-blue" style="text-align:right;">
                     <b class="float-end ft-16">
                         Order no: 203
                         <br/>
@@ -17,11 +17,11 @@
                 </div>
             </div>
             <p class="ft-26 mb-10">Hi Sauban Ahmad,</p>
-            <p class="m-0">Congratulations on choosing Furlenco. Your order is expected to be delivered and installed by <b>xx/xx/xx.</b></p>
+            <p class="m-0">Your order has been successfully cancelled.</p>
         </div>
     </div>
     <div class="pad-2-5">
-        <p class="m-0 fl-red ft-24 bold">Your order details:</p>
+        <p class="m-0 fl-blue ft-24 bold">Your order details:</p>
         <table style="width:100%;border-spacing:0 1.8rem;">
             <tr class="ft-16">
                 <th class="pad-1" colspan="2" style="text-align:left;padding-left:0;width:50%;">
@@ -53,7 +53,7 @@
                 </td>
                 <td class="pad-1-5 pad-r0">Vive Lilac Three Seater Couch</td>
                 <td class="pad-1-5 xs-nopad text-center">x1</td>
-                <td class="pad-1-5 text-center"></td>
+                <td class="pad-1 text-center"></td>
                 <td class="pad-1-5 text-center" style="padding-right:0;">-</td>
             </tr>
             @endfor
@@ -68,8 +68,8 @@
                 </td>
                 <td class="pad-1-5 pad-r0">LED TV</td>
                 <td class="pad-1-5 xs-nopad text-center">x1</td>
-                <td class="pad-1-5 text-center"></td>
-                <td class="pad-1-5 text-center" style="padding-right:0;">-</td>
+                <td class="pad-1 text-center">9 mo</td>
+                <td class="pad-1-5 text-center" style="padding-right:0;">₹X,XXX/-</td>
             </tr>
 
             <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
@@ -90,54 +90,48 @@
                 <td colspan="2">Furlenco Care</td>
                 <td style="text-align:center;padding-top:0 1.5rem">x1</td>
                 <td></td>
-                <td class="text-center" style="padding-right:0;">₹X,XXX/-</td>
+                <td class="text-center">₹X,XXX/-</td>
             </tr>
             <tr><td colspan="5" style="border-top:1px solid #bcbcbc;"></td></tr>
-            <td colspan="5" class="bold ft-24 fl-red">Your payment details:</td>
+            <td colspan="5" class="bold ft-24 fl-blue">Your payment details:</td>
+            <tr>
+                <td colspan="4">Total monthly rental</td>
+                <td class="text-center">₹X,XXX/-</td>
+            </tr>
             <tr>
                 <td colspan="4">Payment plan tenure</td>
-                <td class="text-center" style="padding-right:0;">6 months</td>
+                <td class="text-center">6 months</td>
             </tr>
             <tr>
                 <td colspan="4">Payment plan discount</td>
-                <td class="text-center" style="padding-right:0;">25%</td>
+                <td class="text-center">25%</td>
             </tr>
             <tr>
                 <td colspan="4">Total cost of value added services</td>
-                <td class="text-center" style="padding-right:0;">₹X,XXX/-</td>
+                <td class="text-center">₹X,XXX/-</td>
             </tr>
             <tr>
                 <td colspan="4">Total amount due</td>
-                <td class="text-center" style="padding-right:0;">₹X,XXX/-</td>
+                <td class="text-center">₹X,XXX/-</td>
             </tr>
             <tr>
                 <td colspan="4">Amount paid</td>
-                <td class="text-center" style="padding-right:0;">₹X,XXX/-</td>
+                <td class="text-center">₹X,XXX/-</td>
             </tr>
         </table>
         <hr/>
         <br/>
-        We require our first-time rental customers to complete their KYC registration with us.
-        <a href="#">Click here</a> to download the app & get started.
+        Your payment will be refunded back to the source account within 5-7 working days.
         <br/><br/>
-        Missing out on something or need something else?
-        Here’s a <a href="#">listing of our new products and collections.</a>
+        <a class="bold" href="#">You can always check the Furlenco app to view your order details.</a>
         <br/><br/>
-        Have more doubts? Take a look at our <a href="#">FAQ section</a> which covers (almost) everything on your mind. 
+        Need something else? Here’s a <a class="bold" href="#">listing of our new products and collections.</a>
+        <br/><br/>
+        For any queries or issues, do take a look at our <a class="bold" href="#">FAQ section.</a>
         <br/><br/>
         Lots of love and furniture,
         <br/><br/>
         Team Furlenco.
-    </div>
-    <div class="fl-bg text-center" style="padding:3rem 3.5rem;">
-        <img src="{{$assetPath}}/images/sofa.png" />
-        <p class="fl-yellow ft-40" style="margin:0.5rem 0 1rem 0;">Furlenco<br/>FREEDOM CIRCLE</p>
-        <p>
-            As a Furlenco customer, you’re also a part of the
-            <b>Furlenco Freedom Circle</b> which gives you the freedom to own your rented furniture with <b>Rent-to-Own</b> option,
-            along with a  host of benefits like swap & more.
-            Download the Furlenco app to know more.
-        </p>
     </div>
     @include('components.email.footer')
 </div>

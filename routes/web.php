@@ -15,6 +15,8 @@ use App\Http\Controllers\EmailController;
 */
 
 Route::get('/', [EmailController::class, 'index']);
-Route::get('/{email}', [EmailController::class, 'show']);
+Route::get('/email/{email}', [EmailController::class, 'show']);
 Route::post('/sendEmail', [EmailController::class, 'sendEmail']);
 Route::post('/generateEmailFile', [EmailController::class, 'generateEmailFile']);
+Route::get('/removeClass', [EmailController::class, 'removeClassForm']);
+Route::post('/removeClass', [EmailController::class, 'removeClassForm']);
